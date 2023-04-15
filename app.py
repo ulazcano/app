@@ -6,10 +6,10 @@ def show_index_html():
         var1='hola'
         return render_template('index.html', message=var1)
 
-@app.route('/send_data', methods = ['POST'])
+@app.route('/send_data1', methods = ['POST'])
 def get_data_from_html():
-        pay = request.form['pay']
-        var1='chao'
+        pay = request.form['pay1']
+        var1=pay
         #print ("Pay is " + pay)
         #return "Data sent. Please check your program log"
          
